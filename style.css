@@ -1,0 +1,121 @@
+body{
+    background-color:#f6f5f5;
+    font-family: Poppins,sans-serif;
+}
+.row-padding{
+    margin-top: 15%;
+}
+.card{
+    margin-left: 15%;
+    max-width: 100%;
+    background-color: #fff;
+    padding:4%;
+}
+@media only screen and (max-width: 768px) {
+    .card{
+        margin-left:0px;  
+    }
+}
+
+.unordered{
+    list-style-type: none;
+}
+.first-list ul li{
+    color: #00b894;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.experience{
+    font-weight: 900;
+    margin-left: 18%;
+    color: black;    
+}
+@media only screen and (max-width: 768px) {
+    .experience{
+        margin-left: 0px;
+    }
+    
+}
+.experience-line{
+    border: solid 2px;
+    margin-left: 18%;
+}
+@media only screen and (max-width: 768px) {
+    .experience-line{
+        margin-left: 0px;
+    }
+}
+.unordered1{
+    margin-left: 18%;
+}
+
+.protopillar{
+    color: #00b894;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 18px;
+}
+@media only screen and (max-width: 768px) {
+    .unordered1{
+        margin-left: 0px;
+    }
+}
+.row1{
+    padding-left: 18px;
+}
+@media only screen and (max-width: 768px) {
+    .row1{
+        padding-left: 0px;
+    }
+}
+
+.slide-left-right
+{
+text-decoration:none;
+display: inline-block;
+color: #00b894;
+}
+/* add a empty string after the elment with class .slide-left-right */
+.slide-left-right:after 
+{
+content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+/* Change the width and background on hover, aka sliding out */
+.slide-left-right:hover:after 
+{
+width: 40%;
+background: #00b894;
+}
+.design{
+    
+    padding-left: 35%;
+}
+
+
+.experience1{
+    font-weight: 900;
+    color: black;    
+}
+.experience-line1{
+    border: solid 2px;
+}
+.accent{
+    color:#00b894;
+}
+
+.progress{
+    background-color: #80dcca;
+    height: 8px;
+}
+.progress-bar-success {
+    background-color: #00b894;
+}

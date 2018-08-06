@@ -1,9 +1,30 @@
 body{
     background-color:#f6f5f5;
-    font-family: Poppins,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .row-padding{
     margin-top: 15%;
+}
+.slide{
+    background-image: url("images/slide.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 90%;
+}
+@media only screen and (max-width: 768px) {
+    .slide{ height: 40vh;
+    }
+}
+.information{
+    padding-left: 15%;
+    padding-top: 10%;
+    color: #fff;
+
+}
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    height: 90vh;
 }
 .card{
     margin-left: 15%;
@@ -23,14 +44,13 @@ body{
 .first-list ul li{
     color: #00b894;
     font-size: 1em;
-    text-align: center;
     font-weight: bold;
 }
 
 .experience{
     font-weight: 900;
     margin-left: 18%;
-    color: black;    
+    color: var(--dark);    
 }
 @media only screen and (max-width: 768px) {
     .experience{
@@ -92,7 +112,7 @@ transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes 
 /* Change the width and background on hover, aka sliding out */
 .slide-left-right:hover:after 
 {
-width: 40%;
+width: 20%;
 background: #00b894;
 }
 .design{
@@ -103,7 +123,7 @@ background: #00b894;
 
 .experience1{
     font-weight: 900;
-    color: black;    
+    color: var(--dark);    
 }
 .experience-line1{
     border: solid 2px;

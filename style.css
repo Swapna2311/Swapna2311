@@ -15,7 +15,7 @@ body{
     background-size: 100% 90%;
 }
 @media only screen and (max-width: 768px) {
-    .slide{ height: 40vh;
+    .slide{ height: 45vh;
     }
 }
 .information{

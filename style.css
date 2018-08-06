@@ -22,7 +22,39 @@ body{
     padding-left: 15%;
     padding-top: 10%;
     color: #fff;
-
+}
+.line1{
+    letter-spacing: 2px;
+     line-height: 1.6;
+     font-size: 2.3em;
+}
+.line2{
+    background-color: #00b894;
+     width: 50%;
+     font-size:2em;
+}
+.line3{
+    line-height: 1.4;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+}
+@media only screen and (max-width: 768px) {
+    .information{
+        padding-top: 20px;
+    }
+    .line1{
+        font-size: 1.3em;
+    }
+    .line2{
+        background-color: #00b894;
+         width: 50%;
+         font-size:1.2em;
+    }
+    .line3{
+        line-height: 1.3;
+        letter-spacing: 1.1px;
+        font-size: 0.9em;
+    }
 }
 .overlay{
     background-color: rgba(0,0,0,0.5);
@@ -33,8 +65,10 @@ body{
 .card{
     margin-left: 15%;
     max-width: 100%;
-    background-color: #fff;
+    background-color: #e3dfe3;
+    background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
     padding:4%;
+    border: solid 1px #00b9a4;
 }
 @media only screen and (max-width: 768px) {
     .card{
@@ -45,7 +79,7 @@ body{
     list-style-type: none;
 }
 .first-list ul li{
-    color: #00b894;
+    color: #00b9a4;
     font-size: 1em;
     font-weight: bold;
 }
@@ -76,7 +110,7 @@ body{
 }
 
 .protopillar{
-    color: #00b894;
+    color: #00b9a4;
     font-size: 1.3em;
     font-weight: bold;
     padding-left: 18px;
@@ -100,7 +134,7 @@ body{
 {
 text-decoration:none;
 display: inline-block;
-color: #00b894;
+color: #00b9a4;
 }
 /* add a empty string after the elment with class .slide-left-right */
 .slide-left-right:after 
@@ -118,7 +152,7 @@ transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes 
 .slide-left-right:hover:after 
 {
 width: 20%;
-background: #00b894;
+background: #00b9a4;
 }
 .design{
     
@@ -133,7 +167,7 @@ background: #00b894;
     border: solid 2px;
 }
 .accent{
-    color:#00b894;
+    color:#00b9a4;
 }
 
 /* Technical skill section starts here */
@@ -142,5 +176,5 @@ background: #00b894;
     height: 8px;
 }
 .progress-bar-success {
-    background-color: #00b894;
+    background-color: #00b9a4;
 }

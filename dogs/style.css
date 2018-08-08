@@ -1,0 +1,100 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row-style {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* main card CSS starts here */
+.card{
+    margin: 100px 250px;
+    height: auto;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 50px;
+}
+.title1{
+    font-size:1.8em;
+    font-weight: bold;
+    
+}
+
+@media only screen and (max-width: 768px) {
+.card{
+    margin: 30px;
+    max-width: 100%;
+}
+.title1{
+    font-size:1.3em;
+}
+}
+
+.abc{
+    margin-left: 280px;
+    text-align: left;
+}
+@media only screen and (max-width: 768px) {
+    .abc{
+        margin-left: 190px;
+    }
+}
+.result{
+    color: #9da9b2;
+}
+.img1{
+    border-radius: 10px;
+    height:300px;
+    max-width: 100%;
+}
+
+.shadow {
+	position: relative;
+	max-width: 100%;
+	float: left;
+	}
+    
+    .shadow::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+        -webkit-box-shadow: inset -12px -50px 115px -43px rgba(52,29,227,1);
+-moz-box-shadow: inset -12px -50px 115px -43px rgba(52,29,227,1);
+box-shadow: inset -12px -50px 115px -43px rgba(52,29,227,1);
+/* -webkit-box-shadow: 11px 71px 147px -21px rgba(52,29,227,0.64);
+-moz-box-shadow: 11px 71px 147px -21px rgba(52,29,227,0.64);
+box-shadow: 11px 71px 147px -21px rgba(52,29,227,0.64) */
+	   } 
+	   
+.shadow img {
+	float: left;
+    } 
+
+.button1 {
+    position:absolute;left:0; right:0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: blue;
+    color:#fff;
+    border:solid 2px gray;
+    font-weight: 500;
+}
+.button1:hover{
+    background-color: transparent;
+    color:#fff;
+    border:solid 2px blue;
+}
+
+.btn2{
+    background-color: #c7d0d6 !important;
+    color: black !important;
+}
+  

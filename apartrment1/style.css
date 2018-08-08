@@ -1,0 +1,192 @@
+body{
+    font-family: Poppins,sans-serif;
+}
+
+.row-style {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+/* main card CSS starts here */
+.card{
+    margin: 100px 250px;
+    height: auto;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+.card{
+    margin: 30px;
+    max-width: 100%;
+}
+.title1{
+    font-size:1.3em;
+}
+}
+
+.title1{
+    font-size:1.8em;
+}
+.abc{
+    padding-left: 100px;
+}
+@media only screen and (max-width: 768px) {
+    .abc{
+        padding-left: 30px;
+    }
+}
+.card-body{
+    font-size: 1.6em;
+    font-weight: bold;
+    
+}
+.second{
+    color: #989898;
+    padding-left: 0 !important;
+}
+
+
+.card-container {
+    margin-left: 10%;
+    position: relative; 
+}
+
+/* content card css */
+.card-content {
+    position: absolute;
+    height: 220px;
+    display: inline;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 80%;
+     background-color: #fff; 
+    z-index: 1;
+    margin-top: 15px;
+    border-radius: 30px !important;
+    padding: 12px !important;
+}
+@media only screen and (max-width: 768px){
+    .card-content {
+    width: 70%;
+    height: 200px;
+}
+.sub-card-row{
+    margin-left: 0px !important;
+}
+.card-container {
+    margin-left: 0%;
+    margin-right: 25%;
+}
+}
+.sub-card-row{
+    margin-left: 10px !important;
+     margin-right: 0px !important;
+}
+.review-row{
+    margin-bottom: 5px !important;
+}
+
+/* css for star rating */
+p{
+    margin  : 0 0 1.5em;
+    padding : 0;
+  }
+  
+  
+  .starRating:not(old){
+    display        : inline-block;
+    width          : 7.5em;
+    height         : 1.5em;
+    overflow       : hidden;
+    vertical-align : bottom;
+  }
+  
+  .starRating:not(old) > input{
+    margin-right : -100%;
+    opacity      : 0;
+  }
+  
+  .starRating:not(old) > label{
+    display         : block;
+    float           : right;
+    position        : relative;
+    background      : url('star-off.svg');
+    background-size : contain;
+  }
+  
+  .starRating:not(old) > label:before{
+    content         : '';
+    display         : block;
+    width           : 1.5em;
+    height          : 1.5em;
+    background      : url('star-on.svg');
+    background-size : contain;
+    opacity         : 0;
+    transition      : opacity 0.2s linear;
+  }
+  
+  .starRating:not(old) > label:hover:before,
+  .starRating:not(old) > label:hover ~ label:before,
+  .starRating:not(:hover) > :checked ~ label:before{
+    opacity : 1;
+  }
+
+
+/* content image starts here */
+.card-img {
+    height: 250px;
+    width: 85%;
+    padding-top: 200px;
+    padding-left: 30px;
+    margin-left:70%;
+     background-image: url(images/garden.jpg);
+     background-size: cover;
+     background-color: #989898;
+    z-index: -1;
+    border-radius: 30px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card-title-image{
+    color: rgb(5, 5, 252);
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+@media only screen and (max-width: 768px){
+    .card-img{
+        width:80%;
+        margin-left: 50%;
+        height:230px;
+    }
+}
+
+
+/* css for bades */
+
+.list-inline {
+    margin-left: -5px;
+}
+ul li{
+    display: inline;
+}
+.list-inline, .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+ol, ul {
+    margin-bottom: 10px;
+}
+dl, ol, ul {
+    margin-top: 0;
+}
+.social-icons-blog .badges1 {
+    background-color: #12bdbd;
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 0.7em;
+}
+.social-icons-blog a {
+    /* width: 170px; */
+    color: #fff!important;
+}

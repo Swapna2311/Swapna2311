@@ -6,26 +6,46 @@ body{
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
-
+@media only screen and (max-width: 568px) {
+.container-mobile-view{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.container-margin{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+}
 /* main card CSS starts here */
 .card{
-    margin: 100px 250px;
+    /* margin: 100px 350px; */
+    margin-left: 250px !important; 
     height: auto;
-    max-width: 50%;
+     max-width: 50%;
     padding: 20px;
     border-radius: 50px;
 }
-
+@media only screen and (max-width: 768px) {
+.container{
+    width: 100% !important;
+}
+}
 @media only screen and (max-width: 768px) {
 .card{
-    margin: 30px;
+    margin-left: 0px !important;
     max-width: 100%;
 }
 .title1{
-    font-size:1.3em;
+    font-size:1.3em !important;
+    display: inline-block;
 }
 }
 
+@media only screen and (max-width: 1024px) {
+.container-margin{
+    max-width: 100%;
+}
+}
 .title1{
     font-size:1.8em;
 }
@@ -63,13 +83,17 @@ body{
      background-color: #fff; 
     z-index: 1;
     margin-top: 15px;
-    border-radius: 30px !important;
+    border-radius: 5px !important;
     padding: 12px !important;
 }
 @media only screen and (max-width: 768px){
+.card-mobile-view{
+    padding-left: 0px;
+}}
+@media only screen and (max-width: 768px){
     .card-content {
-    width: 70%;
-    height: 200px;
+    /* width: 75%; */
+    height: 220px;
 }
 .sub-card-row{
     margin-left: 0px !important;
@@ -144,7 +168,7 @@ p{
      background-size: cover;
      background-color: #989898;
     z-index: -1;
-    border-radius: 30px !important;
+    border-radius: 5px !important;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .card-title-image{
@@ -156,8 +180,12 @@ p{
 @media only screen and (max-width: 768px){
     .card-img{
         width:80%;
-        margin-left: 50%;
-        height:230px;
+        margin-left: 60%;
+        height:250px;
+    }
+    .card-title-image{
+        font-size: 0.8em;
+        padding-left: 5px;
     }
 }
 
@@ -185,6 +213,7 @@ dl, ol, ul {
     border-radius: 8px;
     padding: 3px;
     font-size: 0.7em;
+    display: inline-block;
 }
 .social-icons-blog a {
     /* width: 170px; */

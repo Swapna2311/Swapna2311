@@ -1,0 +1,277 @@
+body {
+    background: #3a506b;
+    font-family: "Raleway";
+  }
+  
+  .main-content {
+    max-width: 800px;
+    margin: 5em auto 3em;
+    position: relative;
+  }
+  
+  :root {
+    --color: #D50000;
+  }
+  
+  .blue {
+    --color: #FF8A80;
+  }
+  
+  .yellow {
+    --color: #edae49;
+  }
+  
+  .orange {
+    --color: #795548;
+  }
+  
+  .green {
+    --color: #76b041;
+  }
+  
+  .brown {
+    --color: #916953;
+  }
+  
+  .red {
+    --color: #e3655b;
+  }
+  
+  .pink {
+    --color: #039BE5;
+  }
+  
+  .recipe-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    align-self: stretch;
+  
+    .recipe-image {
+      flex: 5;
+      overflow: hidden;
+      position: relative;
+      background: #fcfcfc;
+    }
+    .pie-photo {
+      max-width: 150%;
+      position: absolute;
+      right: 2;
+      bottom: 150%;
+      transition: all 600ms cubic-bezier(1, 0, 0, 1);
+    }
+    .recipe-content {
+      background: #fff;
+      flex: 5;
+      padding: 7%;
+      text-align: center;
+      min-height: 320px;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .navigation {
+      position: absolute;
+      right: -50px;
+      top: 20px;
+      font-size: 30px;
+      text-align: center;
+      color: #fff;
+      i {
+        margin: 8px;
+        display: block;
+        opacity: 0.6;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+        &.disabled {
+          opacity: 0.2;
+          pointer-events: none;
+        }
+      }
+    }
+  
+    .recipe-page {
+      font: 600 28px 'Cedarville Cursive', cursive;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #b1b1b1;
+      opacity: 0;
+      transition: all 600ms cubic-bezier(1, 0, 0, 1);
+    }
+  
+    .recipe-content-inner {
+      transition: all 600ms cubic-bezier(1, 0, 0, 1);
+      top: 150%;
+      position: absolute;
+      left: 0;
+      margin: 0 10%;
+      right: 0;
+    }
+  }
+  
+  .recipe.active {
+    .recipe-page {
+      opacity: 1;
+    }
+    .pie-photo {
+      bottom: 0%;
+    }
+    .recipe-content-inner {
+      top: 12%;
+    }
+  }
+  
+  .pie-name {
+    font: 900 30px Raleway;
+    text-transform: uppercase;
+    margin: 20px 0 5px;
+    letter-spacing: 2px;
+    color: var(--color);
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+    }
+  }
+  
+  .pie-context {
+    font: 400 18px/1.3 "Raleway";
+    color: #999;
+    margin: 30px 20px;
+  }
+  
+  .pie-serving {
+    font: 400 16px Raleway;
+    color: var(--color);
+    border: 0.5px solid var(--color);
+    border-width: 0.5px 0;
+    margin: 20px auto;
+    max-width: 300px;
+    svg {
+      width: 40px;
+      path {
+        fill: var(--color);
+      }
+    }
+    p {
+      display: inline-block;
+      vertical-align: top;
+      margin: 12px 6px 6px;
+      color: #424848;
+      font-weight: 500;
+    }
+    span{
+      color: gray
+    }
+  }
+  
+  .pie-cta {
+    display: block;
+    padding: 15px;
+    border-radius: 40px;
+    background: var(--color);
+    max-width: 180px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    margin: auto;
+    top: 0;
+    transition: all 200ms cubic-bezier(0.77, 0, 0.175, 1);
+    &:hover {
+      top: -5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  // .pie-cta1 {
+  //   padding: 15px 40px;
+  //   border-radius: 40px;
+  //   background: var(--color);
+  //   max-width: 180px;
+  //   font-size: 18px;
+  //   color: #fff;
+  //   box-shadow: none;
+
+  // }
+  
+  aside.context {
+    text-align: center;
+    color: #fff;
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 3px 0;
+      border-bottom: 1px dashed;
+      &:hover {
+        border-style: solid;
+      }
+    }
+    .explanation {
+      max-width: 700px;
+      margin: 2em auto;
+    }
+  }
+  
+  
+  footer {
+    text-align: center;
+    margin: 8em auto;
+    width: 100%;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px dashed #fff;
+      color: #fff;
+      margin: 5px;
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .icons {
+        margin-top: 12px;
+        display: inline-block;
+        font-size: 20px;
+      }
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .recipe-wrapper .pie-photo {
+        max-width: 180%;
+      }
+  }
+  
+  
+  /* For Mobile
+  @media (max-width: 750px) {
+    .recipe-wrapper {
+      .recipe-image, .recipe-content {
+        flex: 1 1 100%;
+      }
+      .recipe-image {
+        height: 300px;
+      }
+      .pie-photo {
+        max-width: 100%;
+      }
+    }
+    
+    .recipe.active .pie-photo {
+        bottom: -30%;
+    }
+  }
+  
+  
+  @media (max-width: 500px) {
+    .recipe-wrapper .recipe-content {
+      min-height: 550px; 
+    }
+    
+  }
+  */

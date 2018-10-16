@@ -56,10 +56,6 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
-.view1 {
-  height: 70vh;
-}
-
 .zoom {
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
@@ -366,11 +362,21 @@ footer h4 {
 }
 
 @media (max-width: 768px) {
+  #particles-js {
+    height: 175vh;
+  }
   .name-line {
-    font-size: 46px !important;
+    font-size: 40px !important;
     line-height: 1.4 !important;
     letter-spacing: normal !important;
     margin-top: 70% !important;
+  }
+  .padding-bottom {
+    padding-bottom: 10%;
+  }
+  .padding-bottom .paragraph {
+    font-size: 20px;
+    text-align: justify;
   }
   .zoom {
     width: 180px !important;

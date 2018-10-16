@@ -78,7 +78,7 @@ body{
     }
 // section2
     .view1{
-        height:70vh;
+        
       }
   
     .zoom {
@@ -414,12 +414,22 @@ footer{
     
     // sass for mobile-view
 @include desktop{
+    #particles-js{
+        height: 175vh;
+    }
     .name-line{
-        font-size: 46px !important;
+        font-size: 40px !important;
         line-height: 1.4 !important;
         letter-spacing: normal !important;
         margin-top: 70% !important;
     }
+    .padding-bottom{
+        padding-bottom: 10%;
+        .paragraph{
+            font-size: 20px;
+            text-align: justify;
+        }
+    } 
     .zoom {
         width: 180px !important;
         height: 180px !important;

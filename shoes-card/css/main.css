@@ -4,6 +4,10 @@ html, body {
   padding: 25px;
 }
 
+html h5, body h5 {
+  text-align: center;
+}
+
 .wrapper {
   width: 300px;
   height: 500px;
